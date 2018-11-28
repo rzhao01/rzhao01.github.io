@@ -16,11 +16,6 @@
     
   
   
-    
-    
-    <link rel="stylesheet" href="/css/highlight.min.css">
-    
-  
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/academicons.min.css">
@@ -33,11 +28,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://rzhao01.github.io/project/example-project/">
+  <link rel="canonical" href="https://rzhao01.github.io/publication/hadanet_arxiv2017/">
 
   
 
-  <title>Project Title | Ritchie Zhao</title>
+  <title>Building Efficient Deep Neural Networks with Unitary Group Convolutions | Ritchie Zhao</title>
 
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script async src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
@@ -165,53 +160,52 @@
 </nav>
 </div>
 
-
-<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+<div class="pub" itemscope itemtype="http://schema.org/ScholarlyArticle">
 
   
 
-    <div class="container pub-title">
-      <h1 itemprop="name">Project Title</h1>
-      <span class="pub-authors" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">
+  <div class="container pub-title">
+    <h1 itemprop="name headline">Building Efficient Deep Neural Networks with Unitary Group Convolutions</h1>
+    <span class="pub-authors">
       
-        </span>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Ritchie Zhao</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Yuwei Hu</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jordan Dotzel</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Christopher De Sa</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Zhiru Zhang
       </span>
-      <span class="pull-right">
-        
+    </span>
+    <span class="pull-right">
+      
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frzhao01.github.io%2fproject%2fexample-project%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2frzhao01.github.io%2fpublication%2fhadanet_arxiv2017%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Project%20Title&amp;url=https%3a%2f%2frzhao01.github.io%2fproject%2fexample-project%2f"
+         href="https://twitter.com/intent/tweet?text=Building%20Efficient%20Deep%20Neural%20Networks%20with%20Unitary%20Group%20Convolutions&amp;url=https%3a%2f%2frzhao01.github.io%2fpublication%2fhadanet_arxiv2017%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frzhao01.github.io%2fproject%2fexample-project%2f&amp;title=Project%20Title"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frzhao01.github.io%2fpublication%2fhadanet_arxiv2017%2f&amp;title=Building%20Efficient%20Deep%20Neural%20Networks%20with%20Unitary%20Group%20Convolutions"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frzhao01.github.io%2fproject%2fexample-project%2f&amp;title=Project%20Title"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frzhao01.github.io%2fpublication%2fhadanet_arxiv2017%2f&amp;title=Building%20Efficient%20Deep%20Neural%20Networks%20with%20Unitary%20Group%20Convolutions"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Project%20Title&amp;body=https%3a%2f%2frzhao01.github.io%2fproject%2fexample-project%2f">
+         href="mailto:?subject=Building%20Efficient%20Deep%20Neural%20Networks%20with%20Unitary%20Group%20Convolutions&amp;body=https%3a%2f%2frzhao01.github.io%2fpublication%2fhadanet_arxiv2017%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -219,28 +213,113 @@
 </div>
 
 
-      </span>
+    </span>
+  </div>
+
+<div class="article-container">
+
+  
+
+  <h3>Abstract</h3>
+  <p class="pub-abstract" itemprop="text">We propose unitary group convolutions (UGConvs), a building block for CNNs which compose a group convolution with unitary transforms in feature space to learn a richer set of representations than group convolution alone. UGConvs generalize two disparate ideas in CNN architecture, channel shuffling (i.e. ShuffleNet) and block-circulant networks (i.e. CirCNN), and provide unifying insights that lead to a deeper understanding of each technique. We experimentally demonstrate that dense unitary transforms can outperform channel shuffling in DNN accuracy. On the other hand, different dense transforms exhibit comparable accuracy performance. Based on these observations we propose HadaNet, a UGConv network using Hadamard transforms. HadaNets achieve similar accuracy to circulant networks with lower computation complexity, and better accuracy than ShuffleNets with the same number of parameters and floating-point multiplies.</p>
+
+  
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+        <div class="col-xs-12 col-sm-9">
+          
+          <a href="/publication/#3">
+            Work in progress
+          </a>
+          
+        </div>
+      </div>
     </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+  
 
-    
-
-  <div class="article-container">
-
-    <div class="article-style" itemprop="articleBody">
-      
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+        <div class="col-xs-12 col-sm-9" itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork"><span itemprop="name">arXiv preprint</span></div>
+      </div>
     </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
 
-    
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+        <time class="col-xs-12 col-sm-9" datetime = "2018-09-19" itemprop="datePublished">
+          September, 2018
+        </time>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="row" style="padding-top: 10px">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+        <div class="col-xs-12 col-sm-9">
+
+          
+
+
+
+
+
+<a class="btn btn-primary btn-outline" href="//arxiv.org/abs/1811.07755v1" target="_blank" itemprop="sameAs">
+  arXiv
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/pdf/1811.07755.pdf">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
   </div>
   <div class="visible-xs space-below"></div>
 
   <div class="space-below"></div>
-  </div>
-</article>
+
+  <div class="article-style"></div>
+
+</div>
+</div>
 
 <div class="container">
   <nav>
   <ul class="pager">
+    
+    <li class="previous"><a href="https://rzhao01.github.io/publication/brainwave_ieee_micro2017/"><span
+      aria-hidden="true">&larr;</span> Serving DNNs in Real Time at Datacenter Scale with Project Brainwave</a></li>
     
 
     
@@ -284,15 +363,6 @@
     
 
     
-    
-      
-      <script defer src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
     
 
     
